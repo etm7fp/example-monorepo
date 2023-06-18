@@ -4,9 +4,11 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "build": "vite build",
     "dev": "vite",
-    "build": "tsc && vite build",
-    "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "lint": "pnpm run \"/^lint:[a-zA-Z]+/\"",
+    "lint:script": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "lint:type": "tsc --noEmit",
     "preview": "vite preview"
   },
   "dependencies": {

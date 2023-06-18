@@ -4,5 +4,11 @@
     "pnpm": ">=8.6.2"
   },
   "packageManager": "pnpm@8.6.2",
-  "private": true
+  "private": true,
+  "scripts": {
+    "build:a": "pnpm run --filter @example-monorepo/a build",
+    "dev:a": "pnpm run --filter @example-monorepo/a dev",
+    "lint:a": "pnpm run --filter @example-monorepo/a lint",
+    "preview:a": "pnpm run --filter @example-monorepo/a preview"
+  }
 }
