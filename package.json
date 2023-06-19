@@ -7,8 +7,12 @@
   "private": true,
   "scripts": {
     "build:a": "pnpm run --filter @example-monorepo/a build",
+    "build:utils": "pnpm run --filter @example-monorepo/utils build",
     "dev:a": "pnpm run --filter @example-monorepo/a dev",
+    "lint": "pnpm run \"/^lint:[a-zA-Z]+$/\"",
     "lint:a": "pnpm run --filter @example-monorepo/a lint",
-    "preview:a": "pnpm run --filter @example-monorepo/a preview"
+    "lint:utils": "pnpm run --filter @example-monorepo/utils lint",
+    "preview:a": "pnpm run --filter @example-monorepo/a preview",
+    "watch:utils": "pnpm run --filter @example-monorepo/utils watch"
   }
 }

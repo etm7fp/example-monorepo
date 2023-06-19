@@ -16,8 +16,10 @@
     "require": "./dist/counter.umd.cjs"
   },
   "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build"
+    "build": "vite build",
+    "lint": "tsc --noEmit --emitDeclarationOnly false",
+    "prepare": "pnpm run build",
+    "watch": "vite build --watch"
   },
   "devDependencies": {
     "typescript": "^5.1.3",
