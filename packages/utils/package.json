@@ -4,19 +4,18 @@
   "version": "0.0.0",
   "type": "module",
   "files": [
-    "dist",
-    "index.d.ts"
+    "dist"
   ],
-  "main": "./dist/counter.umd.cjs",
-  "module": "./dist/counter.js",
-  "types": "./index.d.ts",
+  "main": "./dist/index.umd.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/types/index.d.ts",
   "exports": {
-    "types": "./index.d.ts",
-    "import": "./dist/counter.js",
-    "require": "./dist/counter.umd.cjs"
+    "types": "./dist/types/index.d.ts",
+    "import": "./dist/index.js",
+    "require": "./dist/index.umd.cjs"
   },
   "scripts": {
-    "build": "vite build",
+    "build": "vite build && tsc",
     "lint": "tsc --noEmit --emitDeclarationOnly false",
     "prepare": "pnpm run build",
     "watch": "vite build --watch"
