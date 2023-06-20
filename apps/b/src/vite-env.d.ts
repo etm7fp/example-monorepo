@@ -2,7 +2,7 @@
 
 /** @see https://vitejs.dev/guide/env-and-mode.html#intellisense-for-typescript */
 interface ImportMetaEnv {
-  readonly VITE_A_API_BASE_URL: string
+  readonly VITE_B_API_BASE_URL: string
 }
 
 interface ImportMeta {
