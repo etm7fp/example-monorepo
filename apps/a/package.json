@@ -12,6 +12,7 @@
     "lint": "pnpm run \"/^lint:[a-zA-Z]+/\"",
     "lint:script": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "lint:type": "tsc --noEmit",
+    "postinstall": "msw init public",
     "preview": "vite preview"
   },
   "dependencies": {
