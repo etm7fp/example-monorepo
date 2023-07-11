@@ -1,0 +1,54 @@
+name: Feature request
+description: 新しい機能やアイデアの提案
+title: "[Feat]: "
+labels:
+  - enhancement
+body:
+  - type: dropdown
+    id: type-of-feature
+    attributes:
+      label: Type of feature / 機能の種類
+      description: 機能の種類を選択してください。
+      multiple: false
+      options:
+        - Feature
+        - Fix
+        - Documentation
+        - Style
+        - Refactor
+        - Performance
+        - Test
+        - Build
+        - CI
+        - Chore
+        - Revert
+    validations:
+      required: true
+  - type: checkboxes
+    id: projects
+    attributes:
+      label: Projects / 対象のプロジェクト
+      description: 対象のプロジェクトを選択してください。
+      options:
+        - label: foo
+        - label: bar
+        - label: baz
+    validations:
+      required: true
+  - type: textarea
+    id: suggested-solution
+    attributes:
+      label: Suggested solution / 解決策の提案
+      description: 機能やアイデアの内容を記述してください。
+    validations:
+      required: true
+  - type: textarea
+    id: current-behavior
+    attributes:
+      label: Current behavior / 現在の挙動
+      description: 関連する現在の挙動があれば記述してください。
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional context / 追加のコンテキスト
+      description: その他、提案についての背景や役立つリンク、検討した代替案などがあれば記述してください。

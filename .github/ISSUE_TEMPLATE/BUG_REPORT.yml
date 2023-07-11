@@ -1,0 +1,83 @@
+name: Bug report
+description: バグの報告
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: checkboxes
+    id: projects
+    attributes:
+      label: Projects / 対象のプロジェクト
+      description: 対象のプロジェクトを選択してください。
+      options:
+        - label: foo
+        - label: bar
+        - label: baz
+    validations:
+      required: true
+  - type: checkboxes
+    id: environments
+    attributes:
+      label: Environments / 環境
+      description: 対象の環境を選択してください。
+      options:
+        - label: production
+        - label: development
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: Expected behavior / 期待される挙動
+      description: 期待される正常な挙動について記述してください。
+    validations:
+      required: true
+  - type: textarea
+    id: actual-behavior
+    attributes:
+      label: Actual behavior / 実際の挙動
+      description: 発生しているバグの挙動について記述してください。
+    validations:
+      required: true
+  - type: textarea
+    id: steps-to-reproduce
+    attributes:
+      label: Steps to reproduce / 再現手順
+      description: バグを再現する手順を記述してください。
+      placeholder: |
+        1. ページを開く
+        2. ボタンをクリックする
+        3. エラーが発生する
+    validations:
+      required: true
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: Screenshot / スクリーンショット
+      description: スクリーンショットがあれば添付してください。
+  - type: input
+    id: devices
+    attributes:
+      label: Devices / デバイス
+      description: 問題が発生したデバイスの情報を記述してください。
+  - type: checkboxes
+    id: os
+    attributes:
+      label: OS / OS
+      description: OS を選択してください。
+      options:
+        - label: Windows
+        - label: macOS
+        - label: Linux
+        - label: iOS
+        - label: Android
+        - label: Other
+  - type: checkboxes
+    id: browsers
+    attributes:
+      label: Browsers / ブラウザ
+      description: ブラウザを選択してください。
+      options:
+        - label: Google Chrome
+        - label: Microsoft Edge
+        - label: Firefox
+        - label: Safari
+        - label: Other
